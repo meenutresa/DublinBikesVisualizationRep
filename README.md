@@ -13,7 +13,7 @@ This python file takes json files and create a csv file.
 3. dataconvert.py
 This python file converts data in csv file to .js file.
 
-# .js file after data preprocess:
+# .js file after data preprocessing:
 responseData1.js
 
 # HTML file:
