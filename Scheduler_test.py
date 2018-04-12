@@ -17,7 +17,7 @@ def collect_data_job():
     response = r.get(url)
     #print("response", response)
     data = response.json()
-    filename = "responseData_" + newtimeonlystrings+".json"
+    filename = "response/responseData_" + newtimeonlystrings+".json"
     with open(filename,'w') as outfile:
         #outfile.write(str(data))
         j.dump(data, outfile)

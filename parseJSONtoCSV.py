@@ -2,7 +2,7 @@ import json
 import csv
 import os
 
-path_of_json_files = 'C:/MeenuNeenu/Study/Dissertation/Dataset/dissertation/dissertation/'
+path_of_json_files = './response/'
 json_files = [json_file for json_file in os.listdir(path_of_json_files) if json_file.endswith('.json')]
 #print(json_files)
 flag=0
@@ -21,11 +21,12 @@ for j_file in json_files:
         csv_bikes_data_writer.writerow(data_header)
         flag += 1
 
-    with open(j_file, 'r') as f:
+    with open('response/'+j_file, 'r') as f:
         bikes_data_parsed = json.load(f)
 
 
     for data in bikes_data_parsed:
+        #print(j_file)
         data_values = []
         for keys in data_header:
             data_values.append(data.get(keys))
