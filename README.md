@@ -18,3 +18,6 @@ responseData1.js
 
 # HTML file:
 newslider.html
+
+# Video link
+https://youtu.be/c1Z63CF2bc0
